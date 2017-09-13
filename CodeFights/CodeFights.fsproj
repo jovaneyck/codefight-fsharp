@@ -51,7 +51,11 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <None Include="Script.fsx" />
+    <None Include="Imports.fsx" />
+    <None Include="Palindrome.fsx" />
+    <None Include="AdjacentElementsProduct.fsx" />
+    <None Include="ShapeArea.fsx" />
+    <None Include="MakeArrayConsecutive.fsx" />
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
