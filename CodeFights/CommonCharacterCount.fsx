@@ -1,24 +1,20 @@
 ﻿#load "Imports.fsx"
 open Swensen.Unquote
 
-type State = {common : char list; other : char list}
-
-let rec stripOne acc letter list = 
-    match list with 
-    | [] -> acc
-    | h :: t when letter = h -> List.append acc t
-    | h :: t -> stripOne (h :: acc) letter t
+let rec retainCommon acc one other =
+    match one, other with
+    | _, [] -> acc
+    | [], _ -> acc
+    | h1 :: t1, h2 :: t2 when h1 = h2 -> retainCommon (h1 :: acc) t1 t2
+    | h1 :: t1, h2 :: t2 when h1 < h2 -> retainCommon acc t1 (h2::t2)
+    | h1 :: t1, _ :: t2 -> retainCommon acc (h1::t1) t2
 
 let commonCharacterCount s1 s2 =
-    let folder state letter = 
-        if state.other |> Seq.contains letter then
-            {state with common = letter :: state.common; other = state.other |> stripOne [] letter}
-        else
-            state
-    s1
-    |> Seq.fold folder {common = []; other = s2 |> Seq.toList }
-    |> fun state -> state.common |> List.length
+    let sortedList = Seq.sort >> Seq.toList
+    retainCommon [] (s1 |> sortedList) (s2 |> sortedList)
+    |> Seq.length
 
 printf "testing.."
 test <@ commonCharacterCount "abc" "abc" = 3 @>
+test <@ commonCharacterCount "aabcc" "adcaa" = 3 @>
 printfn "..done!"
