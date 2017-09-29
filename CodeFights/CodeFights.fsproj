@@ -51,13 +51,18 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
+    <None Include="sortByHeight.fsx" />
+    <Content Include="packages.config" />
     <None Include="Imports.fsx" />
     <None Include="Palindrome.fsx" />
     <None Include="AdjacentElementsProduct.fsx" />
     <None Include="ShapeArea.fsx" />
     <None Include="MakeArrayConsecutive.fsx" />
     <None Include="AlmostIncreasingSequence.fsx" />
-    <Content Include="packages.config" />
+    <None Include="MatrixElementsSum.fsx" />
+    <None Include="AllLongestStrings.fsx" />
+    <None Include="CommonCharacterCount.fsx" />
+    <None Include="IsLucky.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
