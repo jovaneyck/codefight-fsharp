@@ -2,7 +2,7 @@
 open Swensen.Unquote
 
 let innerParentheses s =
-    [for m in System.Text.RegularExpressions.Regex.Matches(s, "\([a-z]*\)") -> m.Value]
+    [for m in System.Text.RegularExpressions.Regex.Matches(s, "\(([a-zA-Z]|\s)*\)") -> m.Value]
 
 let reverseContent (parenthesized : string) =
     parenthesized.Substring(1, parenthesized.Length-2)
