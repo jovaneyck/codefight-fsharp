@@ -63,6 +63,7 @@
     <None Include="AllLongestStrings.fsx" />
     <None Include="CommonCharacterCount.fsx" />
     <None Include="IsLucky.fsx" />
+    <None Include="ReverseParentheses.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
