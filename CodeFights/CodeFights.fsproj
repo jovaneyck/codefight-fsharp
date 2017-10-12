@@ -64,6 +64,8 @@
     <None Include="CommonCharacterCount.fsx" />
     <None Include="IsLucky.fsx" />
     <None Include="ReverseParentheses.fsx" />
+    <None Include="AlternatingSums.fsx" />
+    <None Include="AddBorder.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
