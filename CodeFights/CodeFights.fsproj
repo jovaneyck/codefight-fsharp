@@ -66,6 +66,8 @@
     <None Include="ReverseParentheses.fsx" />
     <None Include="AlternatingSums.fsx" />
     <None Include="AddBorder.fsx" />
+    <None Include="AreSimilar.fsx" />
+    <None Include="ArrayChange.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
