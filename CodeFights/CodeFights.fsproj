@@ -68,6 +68,7 @@
     <None Include="AddBorder.fsx" />
     <None Include="AreSimilar.fsx" />
     <None Include="ArrayChange.fsx" />
+    <None Include="PalindromeRearranging.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
