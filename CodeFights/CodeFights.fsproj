@@ -69,6 +69,7 @@
     <None Include="AreSimilar.fsx" />
     <None Include="ArrayChange.fsx" />
     <None Include="PalindromeRearranging.fsx" />
+    <None Include="IsIPv4.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />

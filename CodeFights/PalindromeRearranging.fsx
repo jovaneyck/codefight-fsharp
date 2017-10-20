@@ -5,7 +5,7 @@ open Swensen.Unquote
 let palindromeRearranging inputString =
     let isEven n = n % 2 = 0
     let allEvenNumberOfOccurences =
-         Seq.forall (fun (letter, occurrences) -> occurrences |> isEven)
+         Seq.forall (fun (_, occurrences) -> occurrences |> isEven)
     let groupedLetters = 
         inputString 
         |> Seq.groupBy id 
