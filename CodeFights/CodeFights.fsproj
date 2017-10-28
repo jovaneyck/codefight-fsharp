@@ -70,6 +70,8 @@
     <None Include="ArrayChange.fsx" />
     <None Include="PalindromeRearranging.fsx" />
     <None Include="IsIPv4.fsx" />
+    <None Include="AvoidObstacles.fsx" />
+    <None Include="BoxBlur.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
